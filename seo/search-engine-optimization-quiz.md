@@ -577,3 +577,17 @@
 - [ ] crawling
 - [ ] indexing
 - [ ] HTTP responses
+
+#### Q71. How many H1 tags are typically found on a single page?
+
+- [ ] up to five
+- [x] one
+- [ ] as many as necessary
+- [ ] two
+
+#### Q72. What is a meta description used for?
+
+- [x] to summarize the content of a webpage
+- [ ] to bundle meta tags
+- [ ] to describe images
+- [ ] to assign schema markup

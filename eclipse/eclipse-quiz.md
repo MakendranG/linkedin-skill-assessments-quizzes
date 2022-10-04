@@ -216,7 +216,7 @@
 
 #### Q31. If you check out a branch in Eclipse and still see the old code, what is one possible problem?
 
-- [ ] Your project is not using source control.
+- [x] Your project is not using source control.
 - [ ] Your internet connection is down.
 - [ ] Your Git passwordis incorrect.
 - [ ] You need to refresh your project.
@@ -262,3 +262,10 @@
 - [x] Comments starting with TODO are listed in the Tasks view.
 - [ ] It creates automated email reminders of remaining tasks.
 - [ ] Comments starting with TODO are stored in the Task List view.
+
+#### Q38. When an assert fails where can you view the expected value as compared with the actual value?
+
+- [x] in the Failure Trace section of the JUnit view 
+- [ ] in the Debug view 
+- [ ] in the console
+- [ ] in the Outline view

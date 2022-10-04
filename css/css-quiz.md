@@ -1958,3 +1958,168 @@ a:focus {
       `:focus` styles are applied when a Tab key on a keyboard is used to navigate through links.
 
 [Reference](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes)
+
+#### Q128. What style rule should you use to display all input elements that have failed the validation test with a red font?
+
+- [ ] A
+
+```css
+input.valid[false] {
+  color: red;
+}
+```
+
+- [x] B
+
+```css
+input:invalid {
+  color: red;
+}
+```
+
+- [ ] C
+
+```css
+input.not(valid) {
+  color: red;
+}
+```
+
+- [ ] D
+
+```css
+input.invalid {
+  color: red;
+}
+```
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/:invalid)
+
+#### Q129. What style rule should you apply to the img element to display the element in grayscale with no color?
+
+- [ ] A
+
+```css
+img {
+  transform: grayscale(1);
+}
+```
+
+- [ ] B
+
+```css
+img {
+  filter: grayscale(0);
+}
+```
+
+- [ ] C
+
+```css
+img {
+  transform: grayscale(0);
+}
+```
+
+- [x] D
+
+```css
+img {
+  filter: grayscale(1);
+}
+```
+
+[Reference](https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_filter_grayscale)
+
+#### Q130. Why might you create a reset style sheet?
+
+- [ ] to reduce page size by removing browser styles from the page rendering.
+- [x] to start designing a page style by overriding any built-in browser styles
+- [ ] to make it easier to minify the content of your web page design
+- [ ] to increase execution time by not relying on built-in browser styles
+
+[Reference](http://web.simmons.edu/~grovesd/comm244/notes/week4/css-reset)
+
+#### Q131. Which option is an invalid way of declaring a padding value of 10 pixels on the top and bottom, and 0 pixels on the left and right?
+
+- [ ] padding: 10px 0px;
+- [x] padding: 10px 10px 0px 0px;
+- [ ] padding: 10px 0;
+- [ ] padding: 10px 0px 10px 0px;
+  
+[Reference](https://www.w3schools.com/css/css_padding.asp)
+
+#### Q132. How would you absolutely position an element of the logo class inside of a relatively positioned container?
+
+- [ ] A
+
+```css
+.logo {
+  position: absolute;
+  padding-left: 100px;
+  padding-top: 150px;
+}
+```
+
+- [ ] B
+
+```css
+.logo {
+  position: absolute;
+  left: 100px;
+  top: 150px;
+}
+```
+
+- [ ] C
+
+```css
+.logo {
+  position: absolute;
+  left-padding: 100px;
+  top-padding: 150px;
+}
+```
+
+- [x] D
+
+```css
+.logo {
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 150px;
+}
+```
+  
+#### Q133. How would the ```<div>``` with the class .child be positioned within its container?
+```html
+<style>
+.container{
+height: 200px;
+width: 200px;
+}
+.child{
+margin: auto 0;
+height: 100px;
+}
+</style>
+<div class="container">
+    <div class="child">...</div>
+</div>
+```
+
+- [ ] horizontally centered
+- [ ] vertically centered, spanning the container's width
+- [ ] at the bottom of the container, spanning the container's width
+- [x] at the top of the container, spanning the container's width
+
+[Reference](https://codepen.io/harsh1x4/pen/poVaQVz)
+
+#### Q134. By default, a CSS transition is __
+
+- [ ] asymmetric, so that the transition going from the initial state to the end state is different from the transition going from the end state back to the initial state.
+- [ ] one sided, so that there is only one transition and it goes from the initial state to the end state.
+- [x] symmetric, so that the transition going from the initial state to the end state is the reverse of the transition going from the end state back to the initial state.
+- [ ] one-sided, so that there is only one transition and it goes from the end state to the initial state.
+
+[Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)

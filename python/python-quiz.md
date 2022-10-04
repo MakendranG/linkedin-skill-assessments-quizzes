@@ -750,9 +750,9 @@ def __init__(self):
     pass
 ```
 
-#### Q54. Which of the following is TRUE About how numeric data would be organised in a binary Search tree?
+#### Q54. Which of the following is TRUE About how numeric data would be organised in a Binary Search Tree?
 
-- [x] For any given Node in a binary Search Tree, the child node to the left is less than the value of the given node and the child node to its right is greater than the given node.
+- [x] For any given node in a binary search tree, the value of the node is greater than all the values in the node's left subtree and less than the ones in its right subtree.
 - [ ] Binary Search Tree cannot be used to organize and search through numeric data, given the complication that arise with very deep trees.
 - [ ] The top node of the binary search tree would be an arbitrary number. All the nodes to the left of the top node need to be less than the top node's number, but they don't need to ordered in any particular way.
 - [ ] The smallest numeric value would go in the top most node. The next highest number would go in its left child node, the the next highest number after that would go in its right child node. This pattern would continue until all numeric values were in their own node.
@@ -1872,10 +1872,12 @@ b = a[50:60:2]
 
 #### Q141. Assume you have a non-empty list named _mylist_ and you want to search for a specific value. The minimum number of comparison will be \_**_ and the maximum number of comparison will be _**?
 
-- [x] `len(mylist); len(mylist)`
-- [ ] `1; len(mylist)`
+- [ ] `len(mylist); len(mylist)`
+- [x] `1; len(mylist)`
 - [ ] `2; len(mylist)`
 - [ ] `0; len(mylist)`
+
+**Explanation:** Can use a break statement and the value being searched can be the first element of the list, given that it is non-empty.
 
 #### Q142. If a function does not have a return statement, what does it really return?
 
@@ -2007,21 +2009,76 @@ def can_matrices_be_multiplied (matrix1, matrix2):
 
 ```
 animals = {
-     'a' ['ant', 'antelope', 'armadillo'],
-     'b' ['beetle', 'bear', 'bat'],
-     'c' ['cat', 'cougar', 'camel']
+    'a': ['ant', 'antelope', 'armadillo'],
+    'b': ['beetle', 'bear', 'bat'],
+    'c': ['cat', 'cougar', 'camel']
 }
-animals = defaultdict (list, animals)
 
-print (animals ['b'])
-print (animals ['d'])
+animals = defaultdict(list, animals)
+
+print(animals['b'])
+print(animals['d'])
 ```
 
-- [x] `['beetle', 'bear', 'bat']`
-      `[]`
-- [ ] `['beetle', 'bear', 'bat']`
-      `# an exception will be thrown`
-- [ ] `['beetle', 'bear', 'bat']`
+- [x] A
+
+```
+      ['beetle', 'bear', 'bat']
+      []
+```
+
+- [ ] B
+
+```
+      ['beetle', 'bear', 'bat']
+      # an exception will be thrown
+```
+
+- [ ] C
+
+```
+      ['beetle', 'bear', 'bat']
       None
-- [ ] `['bat', 'bear', 'beetle']`
-      `[]`
+```
+
+- [ ] D
+
+```
+      ['bat', 'bear', 'beetle']
+      []
+```
+
+**Explanation:** Dictionaries usually result in an exception when using the square bracket syntax. Defaultdict here returns a default value dedicated by the first parameter so instead of throwing an exception, they return the default. Note that this needs to be imported as follows: `from collections import defaultdict`
+
+[Reference](https://www.geeksforgeeks.org/defaultdict-in-python/)
+
+#### Q149. What will this line of code return? (Assume n is already defined as any positive integer value.)
+
+```
+[x*2 for x in range(1,n)]
+```
+- [x] a list with all the even numbers less than 2*n
+- [ ] a dictionary with all the even numbers less than 2*n
+- [ ] a list with all the odd numbers less than 2*n
+- [ ] a list with all the even numbers less than or equal to 2*n
+
+[Reference](https://www.w3schools.com/python/ref_func_range.asp)
+
+#### Q150. What does this code print in the console?
+
+```
+x = 18
+
+if x > 10:
+	if x > 15:
+		print('A')
+	else:
+		print('B')
+else:
+	print('C')
+
+```
+- [ ] C
+- [ ] A  B
+- [ ] B
+- [x] A
